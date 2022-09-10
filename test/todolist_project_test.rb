@@ -1,11 +1,11 @@
-require 'bundler/setup'
+require 'bundler/setup' # required for bundler functionality
 
-require 'minitest/autorun'
-require 'minitest/reporters'
-require 'date'
-Minitest::Reporters.use!
+require 'minitest/autorun' # req for minitest testing
+require 'minitest/reporters' # req for pretty test results
+require 'date' # for specific tests
+Minitest::Reporters.use! # enable functionality
 
-require_relative '../lib/todolist_project'
+require_relative '../lib/todolist_project' # project file
 
 class TodoListTest < MiniTest::Test
   def setup

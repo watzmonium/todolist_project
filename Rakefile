@@ -1,6 +1,6 @@
-require "rake/testtask"
-require 'find'
-require "bundler/gem_tasks"
+require "rake/testtask" # allows access to that Rake::TestTask.new syntax that runs a set of tasks for you
+require 'find' # specifically for our find test
+require "bundler/gem_tasks" # this adds several default basic tasks to rake!
 
 desc 'Say hello'
 task :hello do
